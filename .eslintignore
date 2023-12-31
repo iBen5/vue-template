@@ -6,3 +6,5 @@ disk/
 *.jpg
 *.svg
 *.md
+
+pnpm-lock.yaml

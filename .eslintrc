@@ -15,6 +15,7 @@
   "rules": {
     // 关闭组件驼峰命名检查
     "vue/multi-word-component-names": "off",
+    "vue/comment-directive": "off",
     "vue/max-attributes-per-line": [
       "error",
       {

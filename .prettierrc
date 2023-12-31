@@ -5,6 +5,8 @@
   "trailingComma": "none",
   "arrowParens": "avoid",
   "endOfLine": "auto",
+  "singleAttributePerLine": true,
+  "htmlWhitespaceSensitivity": "ignore",
   "overrides": [
     {
       "files": "*.html",
