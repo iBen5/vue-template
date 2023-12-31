@@ -9,7 +9,8 @@
     "preview": "vite preview",
     "lint": "eslint ./ --ext .ts,.vue,.json src --max-warnings=0",
     "format": "prettier --config .prettierrc . --write",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "cz": "cz"
   },
   "dependencies": {
     "vue": "^3.3.11"
@@ -20,6 +21,8 @@
     "@typescript-eslint/eslint-plugin": "^6.16.0",
     "@typescript-eslint/parser": "^6.16.0",
     "@vitejs/plugin-vue": "^4.5.2",
+    "commitizen": "^4.3.0",
+    "cz-conventional-changelog": "^3.3.0",
     "eslint": "^8.56.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.1.2",
