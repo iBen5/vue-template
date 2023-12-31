@@ -1,29 +1,26 @@
 {
-    "root": true,
-    "parser": "vue-eslint-parser",
-    "extends": [
-      "eslint:recommended",
-      "plugin:vue/vue3-recommended"
+  "root": true,
+  "parser": "vue-eslint-parser",
+  "extends": ["eslint:recommended", "plugin:vue/vue3-recommended", "prettier"],
+  "parserOptions": {
+    "parser": "@typescript-eslint/parser",
+    "sourceType": "module"
+  },
+  "plugins": ["@typescript-eslint", "prettier"],
+  "rules": {
+    // 关闭组件驼峰命名检查
+    "vue/multi-word-component-names": "off",
+    "vue/max-attributes-per-line": [
+      "error",
+      {
+        // 单行最多三个属性
+        "singleline": 3,
+        // 多行每行最多一个
+        "multiline": 1
+      }
     ],
-    "parserOptions": {
-      "parser": "@typescript-eslint/parser",
-      "sourceType": "module"
-    },
-    "plugins": [
-      "@typescript-eslint"
-    ],
-    "rules": {
-      // 关闭组件驼峰命名检查
-      "vue/multi-word-component-names": "off",
-      "vue/max-attributes-per-line": [
-        "error",
-        {
-          // 单行最多三个属性
-          "singleline": 3,
-          // 多行每行最多一个
-          "multiline": 1
-        }
-      ],
-      "vue/html-self-closing": "error"
-    }
+    "prettier/prettier": "error",
+    "arrow-body-style": "off",
+    "prefer-arrow-callback": "off"
   }
+}
